@@ -827,3 +827,44 @@ footer {
         opacity: 0.12;
     }
 }
+
+/* Footer button styles */
+.footer-link-button {
+    background: none;
+    border: none;
+    color: #cccccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    width: 100%;
+}
+
+.footer-link-button:hover {
+    color: #2ecc71;
+    transform: translateX(5px);
+}
+
+.footer-link-button::before {
+    content: '→';
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: #2ecc71;
+}
+
+.footer-link-button:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Ensure buttons behave like the other footer links */
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
