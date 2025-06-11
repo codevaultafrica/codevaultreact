@@ -29,7 +29,7 @@ const Header = () => {
     <header>
       <div className="container">
         <nav>
-          <a href="#" className="logo">
+          <a href="/" className="logo">
             <div className="logo-icon"></div>
             <div className="logo-text">
               <span className="logo-main">CodeVault</span>
